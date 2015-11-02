@@ -1,3 +1,4 @@
+var gulp = require('gulp');
 var assembleTask = require('./assemble');
 var isDev = process.argv.indexOf('watch') !== -1;
 

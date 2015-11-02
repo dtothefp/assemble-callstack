@@ -1,8 +1,9 @@
 var nunjucks = require('nunjucks');
 var consolidate = require('consolidate');
-var app = require('assemble')();
+var Assemble = require('assemble');
 
-modules.exports = function(isDev) {
+module.exports = function(isDev) {
+  var app = new Assemble();
   var src = ['./src/**/*.html'];
   var userName = process.cwd().split('/')[2];
 
